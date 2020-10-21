@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+你身上配备了工具:
+{% for item in item_gj %}
+    {{ item['name'] }}
+{% endfor %}
+<br>
+你身上配备了配饰:
+{% for item in item_ps %}
+    {{ item['name'] }}
+{% endfor %}
+<br>
+{% for item in item_box %}
+
+{{ item['name'] }}
+    <input type="button" value="穿戴" onclick="location='http://127.0.0.1:5000/getchanged/{{username}}/{{item['_id']}}'"/>
+    <br>
+
+{% endfor %}
+
+</body>
+</html>

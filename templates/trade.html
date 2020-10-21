@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for item in items_box %}
+    {{ item['name'] }}
+    <input type="button" value="挂牌" onclick="location='http://127.0.0.1:5000/hangout/{{username}}/{{item['_id']}}'"/>
+    <br>
+{% endfor %}
+{% for item in items_selling %}
+    {{ item['name'] }}
+    <input type="button" value="回收" onclick="location='http://127.0.0.1:5000/retrieve/{{username}}/{{item['_id']}}'"/>
+    <br>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for item in items %}
+    {{ item['name'] }}
+    <input type="button" value="购买" onclick="location='http://127.0.0.1:5000/buy/{{username}}/{{item['_id']}}'"/>
+    <br>
+{% endfor %}
+</body>
+</html>

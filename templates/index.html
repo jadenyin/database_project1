@@ -1,0 +1,27 @@
+<html>
+
+   <head>
+      <script type = "text/javascript"
+         src = "{{ url_for('static', filename = 'action.js') }}" ></script>
+   </head>
+   <body>
+   <input type="button" value="赚钱"
+   onclick="location='http://127.0.0.1:5000/earn/'+'{{username}}'"/>
+   </body>
+   <body>
+   <input type="button" value="寻宝"
+   onclick="location.href='http://127.0.0.1:5000/hunt/'+'{{username}}'"/>
+   </body>
+   <body>
+    <input type="button" value="佩戴"
+   onclick="location.href='http://127.0.0.1:5000/dress/'+'{{username}}'"/>
+   </body>
+   <body>
+    <input type="button" value="浏览市场"
+   onclick="location.href='http://127.0.0.1:5000/market/'+'{{username}}'"/>
+   </body>
+   <body>
+    <input type="button" value="挂牌回收"
+   onclick="location.href='http://127.0.0.1:5000/trade/'+'{{username}}'"/>
+   </body>
+</html>
